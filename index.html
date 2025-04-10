@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Velammal College Of Engineering & Technology</h1>
+    <h2>Department of Information Technology</h2>
+    
+    <form id="feedbackForm" method="post" action="process_feedback.php" onsubmit="return validateForm()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>FeedBack Form</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>The faculty is</td>
+                <td>
+                    <select name="faculty_name" id="faculty_name">
+                        <option value="">Select</option>
+                        <option value="S Kamalesh">S Kamalesh</option>
+                        <option value="Other Faculty">Other Faculty</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Select the subject name</td>
+                <td>
+                    <select name="subject_name" id="subject_name">
+                        <option value="">Select</option>
+                        <option value="CG">CG</option>
+                        <option value="Database">Database</option>
+                        <option value="Web Programming">Web Programming</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Please enter the topics covered</td>
+                <td>
+                    <textarea name="topics_covered" id="topics_covered" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Select the Content Delivery Method</td>
+                <td>
+                    <select name="content_delivery_method" id="content_delivery_method">
+                        <option value="">Select</option>
+                        <option value="Presentation">Presentation</option>
+                        <option value="Lecture">Lecture</option>
+                        <option value="Discussion">Discussion</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="rating-note">For the following questions enter the rating value (Rating factor: Excellent = 3, Good = 2, Poor = 1)</div>
+        
+        <table>
+            <tr>
+                <td>5</td>
+                <td>On-time to class</td>
+                <td>
+                    <select name="on_time_rating" id="on_time_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Well prepared for the class</td>
+                <td>
+                    <select name="well_prepared_rating" id="well_prepared_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Communicates only in English</td>
+                <td>
+                    <select name="english_communication_rating" id="english_communication_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Explains the topics clearly</td>
+                <td>
+                    <select name="explains_clearly_rating" id="explains_clearly_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Integrate the topics with real-world applications</td>
+                <td>
+                    <select name="real_world_applications_rating" id="real_world_applications_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Makes the classroom very lively and interesting</td>
+                <td>
+                    <select name="classroom_lively_rating" id="classroom_lively_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Interaction with the students</td>
+                <td>
+                    <select name="student_interaction_rating" id="student_interaction_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Your experience with the content delivery method</td>
+                <td>
+                    <select name="content_delivery_experience_rating" id="content_delivery_experience_rating">
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    
+    <script src="validation.js"></script>
+</body>
+</html>
